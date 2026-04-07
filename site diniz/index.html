@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="icon" type="image/png" href="favicon.png">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Óticas Diniz</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: #f6f6f7;
+  color: #1a1a1a;
+}
+
+/* HEADER */
+.header {
+  background: linear-gradient(135deg, #d90429, #9d0208);
+  color: white;
+  text-align: center;
+  padding: 40px 20px 60px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.logo-clean {
+  width: 300px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 15px;
+}
+
+.header h1 {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.header p {
+  font-size: 14px;
+  opacity: 0.9;
+  margin-top: 8px;
+}
+
+/* CONTAINER (AJUSTADO PREMIUM) */
+.container {
+  max-width: 420px;
+  margin: -20px auto 0;
+  padding: 30px 20px 20px;
+}
+
+/* BOTÕES */
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 16px;
+  border-radius: 14px;
+  font-weight: 600;
+  margin-bottom: 12px;
+  text-decoration: none;
+  transition: all 0.25s ease;
+}
+
+.btn-primary {
+  display: block;
+  margin: 0 auto 12px; /* centraliza */
+  max-width: 320px; /* largura controlada */
+}
+
+.btn-primary {
+  display: block;
+  margin: 0 auto 12px;
+  max-width: 320px;
+
+  background: linear-gradient(135deg, #e30613, #b8000f);
+  color: white;
+  padding: 18px;
+  border-radius: 16px;
+  font-weight: 700;
+  font-size: 15px;
+
+  box-shadow: 0 12px 30px rgba(227,6,19,0.35);
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 18px 40px rgba(227,6,19,0.45);
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto 12px;
+
+  padding: 18px;
+  border-radius: 16px;
+
+  font-weight: 700;
+  font-size: 15px;
+  text-align: center;
+
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #e30613, #b8000f);
+  color: white;
+  box-shadow: 0 12px 30px rgba(227,6,19,0.35);
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 18px 40px rgba(227,6,19,0.45);
+}
+
+.btn-whats {
+  background: #25d366;
+  color: white;
+}
+
+.btn-outline {
+  border: 2px solid #e30613;
+  color: #e30613;
+  background: white;
+}
+
+/* espaçamento extra refinado */
+.btn:first-of-type {
+  margin-top: 10px;
+}
+
+.insta-btn:hover {
+  background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);
+  color: white;
+}
+/* SECTION */
+.section {
+  margin-top: 30px;
+}
+
+.section-title {
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #999;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* CARDS */
+.card {
+  background: white;
+  border-radius: 16px;
+  padding: 16px;
+  margin-bottom: 12px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.06);
+}
+
+.card h3 {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+.card p {
+  font-size: 12px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.card-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.small-btn {
+  flex: 1;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 12px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.map {
+  border: 1px solid #e30613;
+  color: #e30613;
+}
+
+.whats {
+  background: #e6f7ee;
+  color: #25d366;
+}
+
+/* SERVIÇOS */
+.services {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.service {
+  background: white;
+  border-radius: 14px;
+  padding: 15px;
+  text-align: center;
+  font-size: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+/* INSTAGRAM */
+.insta {
+  background: linear-gradient(135deg, #833ab4, #fd1d1d, #fcb045);
+  color: white;
+  text-align: center;
+  padding: 14px;
+  border-radius: 12px;
+  font-weight: 600;
+  text-decoration: none;
+  display: block;
+}
+
+/* DEPOIMENTOS */
+/* CONTAINER */
+.testimonials {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+}
+
+/* SCROLL PREMIUM */
+.testimonials::-webkit-scrollbar {
+  height: 6px;
+}
+
+.testimonials::-webkit-scrollbar-thumb {
+  background: #e30613;
+  border-radius: 10px;
+}
+
+/* CARD */
+.testimonial-card {
+  min-width: 260px;
+  background: white;
+  border-radius: 18px;
+  padding: 18px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  flex-shrink: 0;
+
+  transition: 0.3s;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-4px);
+}
+
+/* ESTRELAS */
+.stars {
+  color: #e30613;
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+/* TEXTO */
+.testimonial-card p {
+  font-size: 13px;
+  color: #444;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+/* NOME */
+.testimonial-card span {
+  font-size: 12px;
+  font-weight: 600;
+  color: #999;
+}
+
+/* CTA FINAL */
+.cta {
+  background: #d90429;
+  color: white;
+  text-align: center;
+  padding: 20px;
+  margin-top: 30px;
+  border-radius: 16px;
+}
+
+.cta p {
+  font-size: 13px;
+  margin-top: 5px;
+  opacity: 0.9;
+}
+
+.footer {
+  text-align: center;
+  font-size: 11px;
+  color: #888;
+  margin-top: 20px;
+}
+
+.hidden-unidades {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.4s ease;
+}
+
+.hidden-unidades.active {
+  max-height: 300px; /* altura da “caixa” */
+  overflow-y: auto; /* ativa scroll vertical */
+  margin-top: 15px;
+  padding-right: 5px;
+}
+
+.hidden-unidades.active {
+  max-height: 500px;
+  margin-top: 10px;
+}
+
+.hidden-unidades.active::-webkit-scrollbar {
+  width: 6px;
+}
+
+.hidden-unidades.active::-webkit-scrollbar-thumb {
+  background: #e30613;
+  border-radius: 10px;
+}
+
+.hidden-unidades.active::-webkit-scrollbar-track {
+  background: #eee;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="header">
+  <img src="logo.png.png" class="logo-clean">
+</div>
+
+<div class="container">
+
+  <button class="btn btn-primary" onclick="toggleUnidades()">
+  AGENDAR EXAME GRÁTIS!
+</button>
+
+<a href="https://www.instagram.com/oticasdinizrj/" target="_blank" class="btn btn-primary">
+  VER NOSSAS PROMOÇÕES
+</a>
+
+<div id="lista-unidades" class="hidden-unidades">
+
+  <div class="card unidade" data-lat="-22.9035" data-lng="-43.2096">
+    <h3>Bangu</h3>
+    <p>R. Prof. Clemente Ferreira, 1810 - loja C - Bangu</p>
+    <a href="http://wa.me/5521977343849" class="btn btn-whats">Agendar</a>
+  </div>
+
+  <div class="card unidade" data-lat="-22.8072" data-lng="-43.4130">
+    <h3>Nilópolis</h3>
+    <p>Av. Getúlio Vargas, 1577 - Loja A - Centro</p>
+    <a href="http://wa.me/5521988994187" class="btn btn-whats">Agendar</a>
+  </div>
+
+  <div class="card unidade" data-lat="-22.7825" data-lng="-43.4296">
+    <h3>Miguel Couto</h3>
+    <p>Rua Cameron, 26 - Miguel Couto, Nova Iguaçu</p>
+    <a href="http://wa.me/message/3SRKPDJGTBFUM1" class="btn btn-whats">Agendar</a>
+  </div>
+
+  <div class="card unidade" data-lat="-22.7825" data-lng="-43.4296">
+    <h3>Vilar dos Teles</h3>
+    <p>R. Egas Muniz, 120 - Loja D - Vilar dos Teles</p>
+    <a href="https://www.instagram.com/oticadinizvilardosteleesrj/" class="btn btn-whats">Agendar</a>
+  </div>
+
+<div class="card unidade" data-lat="-22.9035" data-lng="-43.2096">
+    <h3>Realengo</h3>
+    <p>Av. de Santa Cruz, 1380 - Realengo</p>
+    <a href="http://wa.me/5521969465063" class="btn btn-whats">Agendar</a>
+  </div>
+
+<div class="card unidade" data-lat="-22.9035" data-lng="-43.2096">
+    <h3>Rio das Pedras</h3>
+    <p>Av. Eng. Souza Filho, 1176 - Itanhangá</p>
+    <a href="https://www.instagram.com/oticasdinizriodaspedrasrj/" class="btn btn-whats">Agendar</a>
+  </div>
+
+<div class="card unidade" data-lat="-22.9035" data-lng="-43.2096">
+    <h3>Belford Roxo</h3>
+    <p>Praça Eliaquim Batista, 16 - Centro, Belford Roxo</p>
+    <a href="http://wa.me/message/SBQWPS5MBSCZO1" class="btn btn-whats">Agendar</a>
+  </div>
+
+<div class="card unidade" data-lat="-22.9035" data-lng="-43.2096">
+    <h3>Shopping Nova America</h3>
+    <p>Av. Pastor Martin Luther King Jr., 126 - Del Castilho Shopping Nova America</p>
+    <a href="http://wa.me/message/5KBHICPA66EEK1" class="btn btn-whats">Agendar</a>
+  </div>
+
+<div class="card unidade" data-lat="-22.9035" data-lng="-43.2096">
+    <h3>Queimados</h3>
+    <p>Av. Irmãos Guinle, 999 - Centro, Queimados</p>
+    <a href="http://wa.me/message/YZDVVQA7GYI6B1" class="btn btn-whats">Agendar</a>
+  </div>
+
+<div class="card unidade" data-lat="-22.9035" data-lng="-43.2096">
+    <h3>Itaguaí</h3>
+    <p>Av. Paulo de Frontin, 181 - Monte Serrat, Itaguaí</p>
+    <a href="http://wa.me/5521967627306" class="btn btn-whats">Agendar</a>
+  </div>
+
+<div class="card unidade" data-lat="-22.9035" data-lng="-43.2096">
+    <h3>Santa Cruz</h3>
+    <p>R. Lopes de Moura, 15 - Loja A & B - Santa Cruz</p>
+    <a href="http://wa.me/5521977126687" class="btn btn-whats">Agendar</a>
+  </div>
+
+</div>
+
+</div>
+  
+
+  
+
+  <!-- SERVIÇOS -->
+  <div class="section">
+    <div class="section-title">SERVIÇOS</div>
+
+    <div class="services">
+      <div class="service">Exame grátis</div>
+      <div class="service">Óculos grau</div>
+      <div class="service">Óculos sol</div>
+      <div class="service">Lentes</div>
+      <div class="service">Ajustes</div>
+      <div class="service">Montagem</div>
+    </div>
+  </div>
+
+  
+  
+  <!-- DEPOIMENTOS -->
+  <div class="section">
+  <div class="section-title">AVALIAÇÕES DE CLIENTES</div>
+
+  <div class="testimonials">
+
+    <div class="testimonial-card">
+      <div class="stars">★★★★★</div>
+      <p>Atendimento rápido e muito atencioso, fiz meu exame na hora!</p>
+      <span>— Juliana M.</span>
+    </div>
+
+    <div class="testimonial-card">
+      <div class="stars">★★★★★</div>
+      <p>Preço ótimo e muita variedade de armações, recomendo demais.</p>
+      <span>— Carlos R.</span>
+    </div>
+
+    <div class="testimonial-card">
+      <div class="stars">★★★★★</div>
+      <p>Fiz meu óculos e ficou perfeito, qualidade excelente!</p>
+      <span>— Fernanda S.</span>
+    </div>
+
+    <div class="testimonial-card">
+      <div class="stars">★★★★★</div>
+      <p>Equipe super profissional, fui muito bem atendido do início ao fim.</p>
+      <span>— Marcos L.</span>
+    </div>
+
+    <div class="testimonial-card">
+      <div class="stars">★★★★★</div>
+      <p>Entrega rápida e armações muito bonitas, voltarei com certeza!</p>
+      <span>— Ana P.</span>
+    </div>
+
+  </div>
+</div>
+  <!-- CTA -->
+  <div class="cta">
+    <strong>Agende agora — é grátis!</strong>
+    <p>Sem compromisso. Veja melhor hoje.</p>
+  </div>
+
+  <div class="footer">
+   © 2026 Óticas Diniz | Desenvolvido por 
+<a href="https://instagram.com/thepixeloo" target="_blank">@thepixeloo</a>
+  </div>
+
+</div>
+
+<script>
+function toggleUnidades() {
+  const lista = document.getElementById("lista-unidades");
+  lista.classList.toggle("active");
+
+  if (lista.classList.contains("active")) {
+    localizarUsuario();
+  }
+}
+
+function localizarUsuario() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(pos => {
+      const userLat = pos.coords.latitude;
+      const userLng = pos.coords.longitude;
+
+      ordenarPorDistancia(userLat, userLng);
+    });
+  }
+}
+
+function calcularDistancia(lat1, lon1, lat2, lon2) {
+  const R = 6371;
+  const dLat = (lat2 - lat1) * Math.PI / 180;
+  const dLon = (lon2 - lon1) * Math.PI / 180;
+
+  const a =
+    Math.sin(dLat/2) * Math.sin(dLat/2) +
+    Math.cos(lat1 * Math.PI / 180) *
+    Math.cos(lat2 * Math.PI / 180) *
+    Math.sin(dLon/2) * Math.sin(dLon/2);
+
+  return R * (2 * Math.atan2(Math.sqrt(a), Math.sqrt(1-a)));
+}
+
+function ordenarPorDistancia(userLat, userLng) {
+  const unidades = document.querySelectorAll(".unidade");
+
+  const lista = Array.from(unidades).map(el => {
+    const lat = parseFloat(el.dataset.lat);
+    const lng = parseFloat(el.dataset.lng);
+
+    const distancia = calcularDistancia(userLat, userLng, lat, lng);
+
+    return { el, distancia };
+  });
+
+  lista.sort((a, b) => a.distancia - b.distancia);
+
+  const container = document.getElementById("lista-unidades");
+
+  lista.forEach(item => {
+    container.appendChild(item.el);
+  });
+}
+</script>
+
+</body>
+</html>
