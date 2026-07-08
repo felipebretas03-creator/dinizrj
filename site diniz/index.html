@@ -356,6 +356,25 @@
       background: #eee;
     }
   </style>
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1344759954458937');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1344759954458937&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
 </head>
 
 <body>
@@ -366,11 +385,11 @@
 
   <div class="container">
 
-    <button class="btn btn-primary" onclick="toggleUnidades()">
+    <button class="btn btn-primary" onclick="fbq('track', 'ViewContent'); toggleUnidades();">
       ENCONTRE A LOJA MAIS PRÓXIMA
     </button>
 
-    <a href="https://www.instagram.com/oticasdinizrj/" target="_blank" class="btn btn-primary">
+    <a href="https://www.instagram.com/oticasdinizrj/" target="_blank" class="btn btn-primary" onclick="fbq('track', 'ViewContent');">
       VER NOSSAS PROMOÇÕES
     </a>
 
@@ -379,67 +398,67 @@
       <div class="card unidade" data-lat="-22.9035" data-lng="-43.2096">
         <h3>Bangu</h3>
         <p>R. Prof. Clemente Ferreira, 1810 - loja C - Bangu</p>
-        <a href="http://wa.me/5521977343849" class="btn btn-whats">Agendar</a>
+        <a href="http://wa.me/5521977343849" class="btn btn-whats" onclick="fbq('trackCustom', 'Bangu');">Agendar</a>
       </div>
 
       <div class="card unidade" data-lat="-22.8072" data-lng="-43.4130">
         <h3>Nilópolis</h3>
         <p>Av. Getúlio Vargas, 1577 - Loja A - Centro</p>
-        <a href="http://wa.me/5521988994187" class="btn btn-whats">Agendar</a>
+        <a href="http://wa.me/5521988994187" class="btn btn-whats" onclick="fbq('trackCustom', 'Nilopolis');">Agendar</a>
       </div>
 
       <div class="card unidade" data-lat="-22.7825" data-lng="-43.4296">
         <h3>Miguel Couto</h3>
         <p>Rua Cameron, 26 - Miguel Couto, Nova Iguaçu</p>
-        <a href="http://wa.me/message/3SRKPDJGTBFUM1" class="btn btn-whats">Agendar</a>
+        <a href="http://wa.me/message/3SRKPDJGTBFUM1" class="btn btn-whats" onclick="fbq('trackCustom', 'Miguel Couto');">Agendar</a>
       </div>
 
       <div class="card unidade" data-lat="-22.7825" data-lng="-43.4296">
         <h3>Vilar dos Teles</h3>
         <p>R. Egas Muniz, 120 - Loja D - Vilar dos Teles</p>
-        <a href="https://wa.me/5521994535265" class="btn btn-whats">Agendar</a>
+        <a href="https://wa.me/5521994535265" class="btn btn-whats" onclick="fbq('trackCustom', 'Vilar dos Teles');">Agendar</a>
       </div>
 
       <div class="card unidade" data-lat="-22.9035" data-lng="-43.2096">
         <h3>Realengo</h3>
         <p>Av. de Santa Cruz, 1380 - Realengo</p>
-        <a href="http://wa.me/5521969465063" class="btn btn-whats">Agendar</a>
+        <a href="http://wa.me/5521969465063" class="btn btn-whats" onclick="fbq('trackCustom', 'Realengo');">Agendar</a>
       </div>
 
       <div class="card unidade" data-lat="-22.9035" data-lng="-43.2096">
         <h3>Rio das Pedras</h3>
         <p>Av. Eng. Souza Filho, 1176 - Itanhangá</p>
-        <a href="http://wa.me/5521983119802" class="btn btn-whats">Agendar</a>
+        <a href="http://wa.me/5521983119802" class="btn btn-whats" onclick="fbq('trackCustom', 'Rio das Pedras');">Agendar</a>
       </div>
 
       <div class="card unidade" data-lat="-22.9035" data-lng="-43.2096">
         <h3>Belford Roxo</h3>
         <p>Praça Eliaquim Batista, 16 - Centro, Belford Roxo</p>
-        <a href="http://wa.me/message/SBQWPS5MBSCZO1" class="btn btn-whats">Agendar</a>
+        <a href="http://wa.me/message/SBQWPS5MBSCZO1" class="btn btn-whats" onclick="fbq('trackCustom', 'Belford Roxo');">Agendar</a>
       </div>
 
       <div class="card unidade" data-lat="-22.9035" data-lng="-43.2096">
         <h3>Shopping Nova America</h3>
         <p>Av. Pastor Martin Luther King Jr., 126 - Del Castilho Shopping Nova America</p>
-        <a href="http://wa.me/message/5KBHICPA66EEK1" class="btn btn-whats">Agendar</a>
+        <a href="http://wa.me/message/5KBHICPA66EEK1" class="btn btn-whats" onclick="fbq('trackCustom', 'Shopping Nova America');">Agendar</a>
       </div>
 
       <div class="card unidade" data-lat="-22.9035" data-lng="-43.2096">
         <h3>Queimados</h3>
         <p>Av. Irmãos Guinle, 999 - Centro, Queimados</p>
-        <a href="http://wa.me/message/YZDVVQA7GYI6B1" class="btn btn-whats">Agendar</a>
+        <a href="http://wa.me/message/YZDVVQA7GYI6B1" class="btn btn-whats" onclick="fbq('trackCustom', 'Queimados');">Agendar</a>
       </div>
 
       <div class="card unidade" data-lat="-22.9035" data-lng="-43.2096">
         <h3>Itaguaí</h3>
         <p>Av. Paulo de Frontin, 181 - Monte Serrat, Itaguaí</p>
-        <a href="http://wa.me/5521967627306" class="btn btn-whats">Agendar</a>
+        <a href="http://wa.me/5521967627306" class="btn btn-whats" onclick="fbq('trackCustom', 'Itaguai');">Agendar</a>
       </div>
 
       <div class="card unidade" data-lat="-22.9035" data-lng="-43.2096">
         <h3>Santa Cruz</h3>
         <p>R. Lopes de Moura, 15 - Loja A & B - Santa Cruz</p>
-        <a href="http://wa.me/5521977126687" class="btn btn-whats">Agendar</a>
+        <a href="http://wa.me/5521977126687" class="btn btn-whats" onclick="fbq('trackCustom', 'Santa Cruz');">Agendar</a>
       </div>
 
     </div>
